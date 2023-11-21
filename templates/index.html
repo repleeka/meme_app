@@ -1,0 +1,51 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meme Generator</title>
+    <!-- In the <head> section of your HTML files -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body>
+    <!-- <h1>Meme Generator</h1> -->
+    <div class="container">
+        <h1 class="center-align">Meme Generator</h1>
+        <div class="row">
+            <form class="col s12" action="/generate" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="top_text" type="text" name="top_text" class="validate" required>
+                        <label for="top_text">Top Text</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="bottom_text" type="text" name="bottom_text" class="validate" required>
+                        <label for="bottom_text">Bottom Text</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <button class="btn waves-effect waves-light" type="submit">Generate</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 
+    <form action="/generate" method="post">
+        <label for="top_text">Top Text:</label>
+        <input type="text" name="top_text" id="top_text" required><br>
+        <label for="bottom_text">Bottom Text:</label>
+        <input type="text" name="bottom_text" id="bottom_text" required><br>
+        <input type="submit" value="Generate">
+    </form> -->
+</body>
+
+</html>

@@ -17,7 +17,7 @@ def generate():
 
     img = Image.open('static/meme.jpg')
     draw = ImageDraw.Draw(img)
-    font_path = "ARIAL.TTF"  # Change this path to your font file
+    font_path = "arial.ttf"  # Change this path to your font file
     font = ImageFont.truetype(font_path, size=40)
 
     draw.text((10, 10), top_text, fill='white', font=font)

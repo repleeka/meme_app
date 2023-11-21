@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meme Generated</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="center-align">Meme Generated!</h1>
+        <div class="row">
+            <div class="col s12 center-align">
+                <img src="{{ meme_path }}" alt="Generated Meme" class="responsive-img">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <a href="/" class="waves-effect waves-light btn">Create Another Meme</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html> -->
+
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Meme Generated</title>
+    <style>
+        .container {
+            text-align: center;
+        }
+
+        .meme-img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Meme Generated!</h1>
+        <img src="{{ meme_path }}" alt="Generated Meme" class="meme-img">
+        <a href="/">Create Another Meme</a>
+    </div>
+</body>
+
+</html>
